@@ -113,6 +113,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\MyCV\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\WebAppTestByQS - Web Deploy1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
