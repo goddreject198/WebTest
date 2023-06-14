@@ -3,23 +3,34 @@
     ViewBag.Title = "Hello";
 }
 
-<h1>Hello</h1>
-<ul>
-    <li><a href="https://www.google.com" target="_blank">Google</a></li>
-    <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
-    <li><a href="/MyCV" target="_blank">MyCV</a></li>
-    <li><a href="/Clock" target="_blank">Clock</a></li>
-    <li><a href="/HPBD" target="_blank">HPBD</a></li>
-</ul>
-<h2>Drag and Drop</h2>
-<p>Drag the image back and forth between the two div elements.</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/Content/mystyle.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Hello</h1>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+        <li><a href="/MyCV" target="_blank">MyCV</a></li>
+        <li><a href="/Clock" target="_blank">Clock</a></li>
+        <li><a href="/HPBD" target="_blank">HPBD</a></li>
+    </ul>
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_AA.svg/1200px-Logo_AA.svg.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="40">
-</div>
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br style="clear: left" />
-<h2>Web Worker</h2>
-<p>Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()">Start Worker</button>
-<button onclick="stopWorker()">Stop Worker</button>
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_AA.svg/1200px-Logo_AA.svg.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="40">
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br style="clear: left" />
+    <h2>Web Worker</h2>
+    <p>Count numbers: <output id="result"></output></p>
+    <button onclick="startWorker()">Start Worker</button>
+    <button onclick="stopWorker()">Stop Worker</button>
+</body>
+</html>

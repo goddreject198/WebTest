@@ -153,8 +153,9 @@ body {
     transform: translate(-50%, 20px);
     animation: animateBanner 1s ease-in-out 1s infinite alternate;
     z-index: 5;
-    width: 50%;
+    width: 500px;
     bottom: 120px;
+    top: 20%;
 }
 
 @keyframes animateBalloon {
@@ -348,9 +349,10 @@ body {
 
     .bannerParty {
         position: absolute;
-        top: 100px;
-        width: 100%;
-        max-width: 100%;
+        top: 10%;
+        /*width: 400px;*/
+/*        width: 100%;
+        max-width: 100%;*/
         left: 50%;
         transform: translate(-50%, 0);
         animation: animateBannerMobile 1s ease-in-out 1s infinite alternate;

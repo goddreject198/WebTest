@@ -95,10 +95,10 @@
     <Content Include="Global.asax" />
     <Content Include="Content\mystyle.css" />
     <Content Include="Images\avatar.jpg" />
-    <Content Include="Images\hpbd\pngwing.com %281%29.png" />
-    <Content Include="Images\hpbd\pngwing.com %282%29.png" />
+    <Content Include="Images\hpbd\Pngtreehappybirthday.png" />
     <Content Include="Images\hpbd\pngwing.com.png" />
-    <Content Include="Images\hpbd\—Pngtree—happy birthday 3d rainbow design_5976501.png" />
+    <Content Include="Images\hpbd\pngwing.com_boy.png" />
+    <Content Include="Images\hpbd\pngwing.com_girl.png" />
     <Content Include="Scripts\clock.js" />
     <Content Include="Scripts\demo_workes.js" />
     <Content Include="Scripts\hpbd.js" />
@@ -123,7 +123,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\MyCV\Index.cshtml" />
-    <None Include="Properties\PublishProfiles\WebAppTestByQS - Web Deploy1.pubxml" />
     <Content Include="Views\Clock\Index.cshtml" />
     <Content Include="Views\HPBD\Index.cshtml" />
     <None Include="Web.Debug.config">

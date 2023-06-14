@@ -3,11 +3,11 @@ const mainContentLetter = "Gửi lời nhắn nhủ đến người bạn bạn 
 
 // Gắn 1 đường link ảnh bất kì
 let imgStart = document.querySelector(".myAI"); //Hình ảnh xuất hiện trong lời mở đầu của bức thư
-imgStart.src = "~/Images/hpbd/pngwing.com (2).png";
+imgStart.src = "/Images/hpbd/pngwing.com_boy.png";
 
 // Gắn 1 link ảnh bất kì
 let imgLetter = document.querySelector(".img");
-imgLetter.src = "~/Images/hpbd/pngwing.com (1).png"; //Hình ảnh xuất hiện trong nội dung của bức thư sau khi bức thư được viết ra hết
+imgLetter.src = "/Images/hpbd/pngwing.com_girl.png"; //Hình ảnh xuất hiện trong nội dung của bức thư sau khi bức thư được viết ra hết
 
 const splitContentLetterSrart_actived = contentLetterSrart_actived.split("");
 
