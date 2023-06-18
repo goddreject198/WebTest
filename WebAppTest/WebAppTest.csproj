@@ -104,6 +104,7 @@
     <Content Include="Scripts\clock.js" />
     <Content Include="Scripts\demo_workes.js" />
     <Content Include="Scripts\hpbd.js" />
+    <Content Include="Scripts\pictures.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

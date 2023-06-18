@@ -326,3 +326,7 @@ WebAppTest/obj/Release/Package/PackageTmp/Scripts/clock.js
 WebAppTest/obj/Release/Package/PackageTmp/Scripts/hpbd.js
 WebAppTest/obj/Release/Package/PackageTmp/Views/Clock/Index.cshtml
 WebAppTest/obj/Release/Package/PackageTmp/Views/HPBD/Index.cshtml
+WebAppTest/obj/Release/Package/PackageTmp/Content/pictures.css
+WebAppTest/obj/Release/Package/PackageTmp/Images/pictures/full_size_20160427203644.jpg
+WebAppTest/obj/Release/Package/PackageTmp/Scripts/pictures.js
+WebAppTest/obj/Release/Package/PackageTmp/Views/Pictures/Index.cshtml

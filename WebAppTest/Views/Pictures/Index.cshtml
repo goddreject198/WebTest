@@ -1,0 +1,31 @@
+﻿@model List<string>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pictures Album</title>
+    <link href="~/Content/pictures.css" rel="stylesheet" />
+</head>
+<body>
+    <ul>
+        @{
+            int i = 0;
+            foreach (var picture in @Model)
+            {
+                i++;
+                <li class="image">
+                    <img src="@picture">
+                    <p>image #@i</p>
+                </li>
+            }
+        }
+    </ul>
+    @*<br/>
+        <div class="light"></div>*@
+    <script src="~/Scripts/pictures.js"></script>
+</body>
+</html>
