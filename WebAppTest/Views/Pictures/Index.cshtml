@@ -11,19 +11,25 @@
     <link href="~/Content/pictures.css" rel="stylesheet" />
 </head>
 <body>
-    <ul>
-        @{
-            int i = 0;
-            foreach (var picture in @Model)
-            {
-                i++;
-                <li class="image">
-                    <img src="@picture">
-                    <p>image #@i</p>
-                </li>
+    <div class="listPictures">
+        <ul>
+            @{
+                int i = 0;
+                foreach (var picture in @Model)
+                {
+                    i++;
+                    <li class="image">
+                        <img src="@picture">
+                        <p>image #@i</p>
+                    </li>
+                }
             }
-        }
-    </ul>
+        </ul>
+    </div>
+    <div class="picDetails">
+        <a href="~/Pictures" class="close"></a>
+        <img class="picTag">
+    </div>
     @*<br/>
         <div class="light"></div>*@
     <script src="~/Scripts/pictures.js"></script>

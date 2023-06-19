@@ -3,10 +3,11 @@
 This file is used by the publish/package process of your Web project. You can customize the behavior of this process
 by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
 -->
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAmi8lPE3KSUqYfLOaMIvQFgAAAAACAAAAAAAQZgAAAAEAACAAAAD4+DaEOe9r42ZxusyLSdAV9Kxx2pL61x1Wz0qZ4wxxzAAAAAAOgAAAAAIAACAAAABUhfsUxJb1p7G19Av0/9GGjPlnrhPlQg/sJikmrrgRb4AAAABZaFTOry1afiLuthoX6uAR3vRKsu6BQ2zMAsXgyQsZ4MZsiU8oDGnPbJs2Fa1wbUEld8VfBTePHOdEYW5O+9ChkkMxRK78yAWTS1wsZBDGipYyaxeqFuR48x4ggVnRaiOC9z8V/ZQaAAFg5tqy1R75NFelZDN7wSS7HJTMqQPehUAAAABludT0/5bh0xsYfhHRscS1vVEHB9wglDZlYv9anA1UkAgi9uwwSbmjIi+9QNWgVrflfeKvRM1RTobCsyTi5NvJ</EncryptedPassword>
-    <History>True|2023-06-18T06:10:43.0847704Z;True|2023-06-18T12:03:42.6338602+07:00;True|2023-06-17T17:00:35.2950999+07:00;True|2023-06-17T16:38:33.0726894+07:00;True|2023-06-17T15:25:29.8423320+07:00;True|2023-06-17T15:23:48.3108406+07:00;True|2023-06-17T15:21:16.5262791+07:00;False|2023-06-17T15:21:03.1460615+07:00;True|2023-06-17T15:19:28.4388589+07:00;True|2023-06-17T15:18:24.8571974+07:00;True|2023-06-17T15:15:07.4636046+07:00;True|2023-06-17T14:41:56.4774811+07:00;True|2023-06-17T14:38:16.3214322+07:00;True|2023-06-17T14:37:41.7753018+07:00;</History>
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQ44bqrgSNEGSuTLAo2S5+gAAAAACAAAAAAADZgAAwAAAABAAAADlQH0rvCPa63s6yylEuszIAAAAAASAAACgAAAAEAAAAMq/UOKsSA5XEU5uzEheuaSAAAAABNl3CtH7vyYJe6IepB16W6DHyl+SIEs/34hlE2UCtfVqylc8q1oA9t4X1Oit6KF2cwqgm7okfkGQ+JMp/f9rEauurN48O0Lnzxt2S/9qarKV5tq1s/2qcxS4HTIVS3yMrufQWMuBijwTsIbPiAHBzzEh97aSGUvLS7nOBZz1qwgUAAAA2CAzh/mUmCTQdAMhXyGoCMaicgM=</EncryptedPassword>
+    <History>True|2023-06-19T13:45:51.7233770Z;False|2023-06-19T20:44:35.0578575+07:00;False|2023-06-19T20:44:27.1577508+07:00;</History>
+    <LastFailureDetails />
   </PropertyGroup>
 </Project>

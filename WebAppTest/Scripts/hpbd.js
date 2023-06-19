@@ -41,7 +41,7 @@ document.querySelector("#mess").addEventListener("change", function () { //Hiệ
                 }
             }, 50 * index)
         })
-
+        backgroundParty
     } else {
         document.querySelector(".content").classList.remove("actived")
         document.querySelector(".img1").setAttribute("style", "opacity: 0; transition: .5s")
