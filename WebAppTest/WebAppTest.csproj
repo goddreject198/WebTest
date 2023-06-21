@@ -1,4 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.props')" />
   <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -88,8 +89,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\chess.css" />
     <Content Include="Content\clock.css" />
     <Content Include="Content\hpbd.css" />
+    <Content Include="Content\island.css" />
     <Content Include="Content\mycv.css" />
     <Content Include="Content\pictures.css" />
     <Content Include="Content\Site.css" />
@@ -103,19 +106,23 @@
     <Content Include="Scripts\clock.js" />
     <Content Include="Scripts\demo_workes.js" />
     <Content Include="Scripts\hpbd.js" />
+    <Content Include="Scripts\island.js" />
     <Content Include="Scripts\pictures.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ChessController.cs" />
     <Compile Include="Controllers\ClockController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HPBDController.cs" />
+    <Compile Include="Controllers\IslandController.cs" />
     <Compile Include="Controllers\MyCVController.cs" />
     <Compile Include="Controllers\PicturesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Pictures.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +136,9 @@
     <Content Include="Views\HPBD\Index.cshtml" />
     <Content Include="Views\Pictures\Index.cshtml" />
     <None Include="Properties\PublishProfiles\WebAppTestByQS - Web Deploy.pubxml" />
+    <Content Include="Views\Island\Index.cshtml" />
+    <Content Include="Views\Chess\Index.cshtml" />
+    <Content Include="Scripts\tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -139,7 +149,12 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\pictures\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\chess.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -171,7 +186,10 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.targets'))" />
   </Target>
+  <Import Project="packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('packages\Microsoft.TypeScript.MSBuild.5.1.3\build\Microsoft.TypeScript.MSBuild.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

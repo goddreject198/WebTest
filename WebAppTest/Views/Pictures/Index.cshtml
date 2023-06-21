@@ -1,4 +1,4 @@
-﻿@model List<string>
+﻿@model List<WebAppTest.Models.Pictures>
 @{
     Layout = null;
 }
@@ -13,28 +13,28 @@
 <body>
     <div class="listPictures">
         <ul>
-            @{
-                int i = 0;
-                foreach (var picture in @Model)
+            @{foreach (var picture in @Model)
                 {
-                    i++;
                     <li class="image">
-                        <img src="@picture">
-                        <p>image #@i</p>
+                        <p id="picid" class="picid">@picture.Id</p>
+                        <img src="@picture.Link">
+                        <p id="image">image #@picture.Id</p>
                     </li>
                 }
             }
         </ul>
     </div>
     <div class="container">
+        <p id="piciddt" class="picid"></p>
         <div id="prepic" class="section"><</div>
-        <div class="picDetails">
+        <figure class="picDetails">
             <a id="closebtn" class="close"></a>
             <img class="picTag">
-            <p class="details">Image</p>
-        </div>
+            <figcaption class="details"></figcaption>
+        </figure>
         <div id="nextpic" class="section">></div>
     </div>
-    <script src="~/Scripts/pictures.js"></script>
+    <script src="~/Scripts/pictures.js">
+    </script>
 </body>
 </html>
