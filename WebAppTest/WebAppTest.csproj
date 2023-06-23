@@ -89,12 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\chess.css" />
     <Content Include="Content\clock.css" />
     <Content Include="Content\hpbd.css" />
     <Content Include="Content\island.css" />
     <Content Include="Content\mycv.css" />
     <Content Include="Content\pictures.css" />
+    <Content Include="Content\pictures2.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\mystyle.css" />
@@ -108,16 +108,17 @@
     <Content Include="Scripts\hpbd.js" />
     <Content Include="Scripts\island.js" />
     <Content Include="Scripts\pictures.js" />
+    <Content Include="Scripts\pictures2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ChessController.cs" />
     <Compile Include="Controllers\ClockController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HPBDController.cs" />
     <Compile Include="Controllers\IslandController.cs" />
     <Compile Include="Controllers\MyCVController.cs" />
+    <Compile Include="Controllers\Pictures2Controller.cs" />
     <Compile Include="Controllers\PicturesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -137,8 +138,7 @@
     <Content Include="Views\Pictures\Index.cshtml" />
     <None Include="Properties\PublishProfiles\WebAppTestByQS - Web Deploy.pubxml" />
     <Content Include="Views\Island\Index.cshtml" />
-    <Content Include="Views\Chess\Index.cshtml" />
-    <Content Include="Scripts\tsconfig.json" />
+    <Content Include="Views\Pictures2\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,9 +149,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\pictures\" />
-  </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="Scripts\chess.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

@@ -18,15 +18,20 @@ li {
     display: inline-block;
     list-style: none;
     position: relative;
-    border: solid 12px #fff;
     background: #fff;
     box-shadow: 0 0 15px 0px #555;
-    transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
     top: 50px;
     left: 20px;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    border-radius: 4px;
 }
 
 
@@ -171,9 +176,9 @@ img {
     position: absolute;
     right: 0;
     top: 0;
-    opacity: 0.3;
-    height: 35px;
-    width: 35px;
+    opacity: 0.5;
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +193,7 @@ img {
     .close:before, .close:after {
         position: absolute;
         content: ' ';
-        height: 30px;
+        height: 20px;
         width: 2px;
         background-color: #333;
     }
