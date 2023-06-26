@@ -92,6 +92,7 @@
     <Content Include="Content\clock.css" />
     <Content Include="Content\hpbd.css" />
     <Content Include="Content\island.css" />
+    <Content Include="Content\login.css" />
     <Content Include="Content\mycv.css" />
     <Content Include="Content\pictures.css" />
     <Content Include="Content\pictures2.css" />
@@ -112,6 +113,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\Authorize.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ClockController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -139,6 +141,7 @@
     <None Include="Properties\PublishProfiles\WebAppTestByQS - Web Deploy.pubxml" />
     <Content Include="Views\Island\Index.cshtml" />
     <Content Include="Views\Pictures2\Index.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

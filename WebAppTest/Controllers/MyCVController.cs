@@ -11,7 +11,12 @@ namespace WebAppTest.Controllers
         // GET: MyCV
         public ActionResult Index()
         {
-            return View();
+            if (Session["user"] == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }    
+            else
+                return View();
         }
     }
 }
