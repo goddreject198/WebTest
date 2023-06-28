@@ -91,6 +91,13 @@ img {
 
 .container {
     display: none;
+    justify-content: space-between;
+    max-height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
     .container.active {
