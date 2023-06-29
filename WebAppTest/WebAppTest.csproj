@@ -93,6 +93,12 @@
     <Content Include="Content\hpbd.css" />
     <Content Include="Content\island.css" />
     <Content Include="Content\login.css" />
+    <Content Include="Content\menu.css">
+      <DependentUpon>menu.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\menu.min.css">
+      <DependentUpon>menu.css</DependentUpon>
+    </Content>
     <Content Include="Content\mycv.css" />
     <Content Include="Content\pictures.css" />
     <Content Include="Content\pictures2.css" />
@@ -108,6 +114,7 @@
     <Content Include="Scripts\demo_workes.js" />
     <Content Include="Scripts\hpbd.js" />
     <Content Include="Scripts\island.js" />
+    <Content Include="Scripts\menu.js" />
     <Content Include="Scripts\pictures.js" />
     <Content Include="Scripts\pictures2.js" />
     <Content Include="Web.config" />
@@ -119,6 +126,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HPBDController.cs" />
     <Compile Include="Controllers\IslandController.cs" />
+    <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\MyCVController.cs" />
     <Compile Include="Controllers\Pictures2Controller.cs" />
     <Compile Include="Controllers\PicturesController.cs" />
@@ -130,6 +138,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Content\menu.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -142,6 +155,7 @@
     <Content Include="Views\Island\Index.cshtml" />
     <Content Include="Views\Pictures2\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Menu\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
