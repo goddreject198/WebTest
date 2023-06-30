@@ -497,3 +497,17 @@ WebAppTest/obj/Release/Package/PackageTmp/Scripts/pictures2.js
 WebAppTest/obj/Release/Package/PackageTmp/Views/Home/Login.cshtml
 WebAppTest/obj/Release/Package/PackageTmp/Views/Menu/Index.cshtml
 WebAppTest/obj/Release/Package/PackageTmp/Views/Pictures2/Index.cshtml
+WebAppTest/.vs/WebAppTest/FileContentIndex/14563cf2-b21d-4d0d-9529-1f71a0f75e2f.vsidx
+WebAppTest/.vs/WebAppTest/FileContentIndex/46e841ae-d406-4d5d-911d-bbac33ecbbe0.vsidx
+WebAppTest/.vs/WebAppTest/FileContentIndex/b9963c3b-95e7-46f2-93dd-a9a4e999dd57.vsidx
+WebAppTest/.vs/WebAppTest/FileContentIndex/f7e5d8c2-6e39-4686-8159-c706cbbbfdfe.vsidx
+WebAppTest/obj/Release/Package/PackageTmp/Content/gallery.css
+WebAppTest/obj/Release/Package/PackageTmp/Content/gallery.min.css
+WebAppTest/obj/Release/Package/PackageTmp/Content/gallery.scss
+WebAppTest/obj/Release/Package/PackageTmp/Content/puppy.css
+WebAppTest/obj/Release/Package/PackageTmp/Content/stickhero.css
+WebAppTest/obj/Release/Package/PackageTmp/Scripts/puppy.js
+WebAppTest/obj/Release/Package/PackageTmp/Scripts/stickhero.js
+WebAppTest/obj/Release/Package/PackageTmp/Views/Gallery/Index.cshtml
+WebAppTest/obj/Release/Package/PackageTmp/Views/Puppy/Index.cshtml
+WebAppTest/obj/Release/Package/PackageTmp/Views/StickHero/Index.cshtml
