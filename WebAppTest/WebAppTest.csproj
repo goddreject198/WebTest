@@ -107,6 +107,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\mystyle.css" />
     <Content Include="Images\avatar.jpg" />
+    <Content Include="Images\hpbd\happybirthday.png" />
     <Content Include="Images\hpbd\Pngtreehappybirthday.png" />
     <Content Include="Images\hpbd\pngwing.com.png" />
     <Content Include="Images\hpbd\pngwing.com_boy.png" />
