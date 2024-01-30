@@ -1,0 +1,51 @@
+﻿*, ::after, ::before {
+    box-sizing: inherit;
+}
+#mobile-header {
+    display: block !important;
+    width: 100% !important;
+}
+.main-navigation {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
+    background-color: var(--base-3);
+    z-index: 100;
+    padding: 0;
+    clear: both;
+    display: block;
+}
+    .main-navigation .inside-navigation {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+.inside-navigation {
+    position: relative;
+}
+.nav-align-right .inside-navigation {
+    justify-content: flex-end;
+}
+.grid-container {
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    line-height: 1.5;
+    background-color: var(--base-3);
+    color: var(--contrast);
+}
+body, button, input, select, textarea {
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+}
+body, button, input, select, textarea {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 400;
+    text-transform: none;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.main-navigation.has-branding .inside-navigation.grid-container, .main-navigation.has-branding.grid-container .inside-navigation:not(.grid-container) {
+    padding: 0px 40px 0px 40px;
+}

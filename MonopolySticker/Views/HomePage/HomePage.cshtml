@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Monopoly Sticker";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/homepage.css" rel="stylesheet" />
+    @*<link href="~/Content/monopoly.css" rel="stylesheet" />*@
+</head>
+<body>
+    <a href="#content" title="Chuyển đến nội dung">Chuyển đến nội dung</a>
+    <nav id="mobile-header" data-auto-hide-sticky itemtype="https://schema.org/SiteNavigationElement" itemscope class="main-navigation mobile-header-navigation has-branding has-sticky-branding wc-menu-cart-activated has-menu-bar-items">
+        <div class="inside-navigation grid-container grid-parent">
+            <form method="get" class="search-form navigation-search" action="~/HomePage/HomePage">
+                <input type="search" class="search-field" value="" name="s" title="Tìm kiếm" />
+            </form>
+            <div class="site-logo mobile-header-logo">
+                <a href="~/HomePage/HomePage" title="Monopoly Sticker" rel="home">
+                    <img src="~/Images/cropped-red.png" alt="Monopoly Sticker" class="is-logo-image" width="512" height="512" />
+                </a>
+            </div>				
+            <button class="menu-toggle" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span><span class="screen-reader-text">Menu</span>
+            </button>
+            <div id="mobile-menu" class="main-nav">
+                <ul id="menu-primary" class=" menu sf-menu">
+                    <li id="menu-item-753" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-214 current_page_item menu-item-753"><a href="https://monopolysticker.vn/" aria-current="page">Home</a></li>
+                    <li id="menu-item-97" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97"><a href="https://monopolysticker.vn/shop/">Shop</a></li>
+                    <li id="menu-item-352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-352"><a href="https://monopolysticker.vn/blog/">Blog</a></li>
+                </ul>
+            </div>
+            <div class="menu-bar-items">
+                <span class="menu-bar-item wc-menu-item">
+                    <a href="https://monopolysticker.vn/cart/" class="cart-contents shopping-bag has-svg-icon" title="Xem giỏ hàng">
+                        <span class="gp-icon shopping-bag">
+                            <svg viewBox="0 0 518 512" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <g id="Union" transform="matrix(1,0,0,1,2.01969,2)">
+                                    <path d="M172,108.5C172,61.832 209.832,24 256.5,24C303.168,24 341,61.832 341,108.5L341,116C341,122.627 346.373,128 353,128C359.628,128 365,122.627 365,116L365,108.5C365,48.577 316.423,0 256.5,0C196.577,0 148,48.577 148,108.5L148,116C148,122.627 153.373,128 160,128C166.628,128 172,122.627 172,116L172,108.5Z" style="fill-rule:nonzero;" />
+                                    <path d="M4.162,145.236C7.195,141.901 11.493,140 16,140L496,140C500.507,140 504.806,141.901 507.838,145.236C510.87,148.571 512.355,153.03 511.928,157.517L482.687,464.551C480.34,489.186 459.65,508 434.903,508L77.097,508C52.35,508 31.66,489.186 29.314,464.551L0.072,157.517C-0.355,153.03 1.13,148.571 4.162,145.236Z" style="fill-rule:nonzero;" />
+                                </g>
+                            </svg>
+                        </span><span class="number-of-items no-items">0</span><span class="amount"></span>
+                    </a>
+                    <div id="wc-mini-cart" class="wc-mini-cart" aria-hidden="true">
+                        <div class="inside-wc-mini-cart">
+                            <div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div>
+                        </div>
+                    </div>
+                </span>
+                <span class="menu-bar-item search-item"><a aria-label="Mở mục tìm kiếm" href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill-rule="evenodd" clip-rule="evenodd" d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" /></svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" /></svg></span></a></span><span class="menu-bar-item slideout-toggle hide-on-mobile has-svg-icon">
+                    <a href="#" role="button" aria-label="Open Off-Canvas Panel">
+                        <span class="gp-icon pro-menu-bars">
+                            <svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
+                                <path d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                            </svg>
+                        </span>
+                    </a>
+                </span>
+            </div>
+        </div><!-- .inside-navigation -->
+    </nav><!-- #site-navigation -->
+
+</body>
+</html>
