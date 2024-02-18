@@ -1,0 +1,68 @@
+﻿@model WebAppLearning.Models.Course
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Field.FieldName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Field.FieldName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseDuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseImage)
+        </dt>
+
+        <dd>
+            <img src="~/Uploads/@Html.DisplayFor(model => model.CourseImage)"
+                 class="thumbnail" style="height:48px;width:48px;"/>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
