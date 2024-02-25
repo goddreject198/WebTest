@@ -169,6 +169,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoryController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -176,8 +177,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202402251549220_CreatedDatabase.cs" />
+    <Compile Include="Migrations\202402251549220_CreatedDatabase.Designer.cs">
+      <DependentUpon>202402251549220_CreatedDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402251716190_updateCategory.cs" />
+    <Compile Include="Migrations\202402251716190_updateCategory.Designer.cs">
+      <DependentUpon>202402251716190_updateCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402251718038_updateCategory1.cs" />
+    <Compile Include="Migrations\202402251718038_updateCategory1.Designer.cs">
+      <DependentUpon>202402251718038_updateCategory1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202402251733218_updateDb.cs" />
+    <Compile Include="Migrations\202402251733218_updateDb.Designer.cs">
+      <DependentUpon>202402251733218_updateDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
+    <Compile Include="Models\Common\Filter.cs" />
     <Compile Include="Models\EF\Adv.cs" />
     <Compile Include="Models\EF\Category.cs" />
     <Compile Include="Models\EF\Contact.cs" />
@@ -2197,6 +2216,9 @@
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_PatialSideBar.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\Category\Edit.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2273,6 +2295,20 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202402251549220_CreatedDatabase.resx">
+      <DependentUpon>202402251549220_CreatedDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402251716190_updateCategory.resx">
+      <DependentUpon>202402251716190_updateCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402251718038_updateCategory1.resx">
+      <DependentUpon>202402251718038_updateCategory1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202402251733218_updateDb.resx">
+      <DependentUpon>202402251733218_updateDb.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

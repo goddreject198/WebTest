@@ -26,6 +26,6 @@ namespace WebBanHangOnline.Models.EF
         public string Alias { get; set; }
         public bool IsActive { get; set; }
 
-        public ICollection<News> News { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

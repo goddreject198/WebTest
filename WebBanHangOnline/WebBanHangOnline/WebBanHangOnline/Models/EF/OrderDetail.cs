@@ -10,11 +10,10 @@ namespace WebBanHangOnline.Models.EF
     [Table("tb_OrderDetail")]
     public class OrderDetail
     {
-        [Required]
-        [Key, Column(Order = 0)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
         public int OrderId { get; set; }
-        [Required]
-        [Key, Column(Order = 1)]
         public int ProductId { get; set; }
         [Required]
         public double Price { get; set; }
