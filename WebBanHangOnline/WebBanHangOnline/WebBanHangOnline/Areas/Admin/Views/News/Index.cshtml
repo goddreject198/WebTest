@@ -1,4 +1,6 @@
-﻿@model IEnumerable<WebBanHangOnline.Models.EF.News>
+﻿@model PagedList.PagedList<WebBanHangOnline.Models.EF.News>
+@using PagedList;
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Danh sách tin tức";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -50,6 +52,20 @@
             </div>
         </div>
         <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    @using (Html.BeginForm("Index", "News", FormMethod.Get, new { }))
+                    {
+                        <div class="input-group input-group-sm">
+                            @Html.TextBox("searchText", new {@class = "form-control" })
+                            @*<input type="text" name="searchText" class="form-control">*@
+                            <span class="input-group-append">
+                                <button type="submit" class="btn btn-info btn-flat">Tìm kiếm</button>
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
             <table class="table table-hover">
                 <thead>
                     <tr class="text-center">
@@ -66,7 +82,7 @@
                 <tbody>
                     @if (Model != null && Model.Any())
                     {
-                        var i = 1;
+                        var i = ((ViewBag.Page - 1) * ViewBag.PageSize) + 1;
                         foreach (var item in Model)
                         {
                             var strCheck = @item.IsActive ? "<i class='fa fa-check text-success'></i>" : "<i class='fas fa-times text-danger'></i>"; 
@@ -94,6 +110,11 @@
                     }
                 </tbody>
             </table>
+
+            <div class="row">
+                <div class="col-6"></div>
+                <div class="col-6" style="text-align:right">@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))</div>
+            </div>
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
