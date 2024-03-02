@@ -183,6 +183,8 @@
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\NewsController.cs" />
     <Compile Include="Areas\Admin\Controllers\PostsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductCategoryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -216,6 +218,18 @@
     <Compile Include="Migrations\202402281543137_updateDb3.cs" />
     <Compile Include="Migrations\202402281543137_updateDb3.Designer.cs">
       <DependentUpon>202402281543137_updateDb3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403021445165_updateDb4.cs" />
+    <Compile Include="Migrations\202403021445165_updateDb4.Designer.cs">
+      <DependentUpon>202403021445165_updateDb4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403021511341_updateDb5.cs" />
+    <Compile Include="Migrations\202403021511341_updateDb5.Designer.cs">
+      <DependentUpon>202403021511341_updateDb5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403021526160_updateDb6.cs" />
+    <Compile Include="Migrations\202403021526160_updateDb6.Designer.cs">
+      <DependentUpon>202403021526160_updateDb6.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -3045,6 +3059,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\autoNumeric-1.9.45.js" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -3154,6 +3169,10 @@
     <Content Include="Areas\Admin\Views\Posts\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Posts\Add.cshtml" />
     <Content Include="Areas\Admin\Views\Posts\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Products\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCategory\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\ProductCategory\Add.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -3165,6 +3184,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Uploads\files\1708942887-thuy-dien1-ankroet--1708854825931516464540-width2560height1756.jpg" />
+    <Content Include="Uploads\files\Screenshot 2023-05-03 123934.png" />
+    <Content Include="Uploads\_thumbs\Files\1708942887-thuy-dien1-ankroet--1708854825931516464540-width2560height1756.jpg" />
+    <Content Include="Uploads\_thumbs\Files\Screenshot 2023-05-03 123934.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -3204,6 +3227,8 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Content\ckfinder\userfiles\" />
+    <Folder Include="Uploads\flash\" />
+    <Folder Include="Uploads\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -3253,6 +3278,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202402281543137_updateDb3.resx">
       <DependentUpon>202402281543137_updateDb3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403021445165_updateDb4.resx">
+      <DependentUpon>202403021445165_updateDb4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403021511341_updateDb5.resx">
+      <DependentUpon>202403021511341_updateDb5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403021526160_updateDb6.resx">
+      <DependentUpon>202403021526160_updateDb6.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
