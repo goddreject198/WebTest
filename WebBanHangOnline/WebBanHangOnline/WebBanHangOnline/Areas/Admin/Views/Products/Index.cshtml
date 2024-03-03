@@ -20,7 +20,7 @@
         </li>
     </ul>
 }
-
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"/>
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <div class="container-fluid">
@@ -92,7 +92,7 @@
                             <tr class="text-center" id="trow_@item.Id">
                                 <td><input type="checkbox" class="chkItem" value="@item.Id" /></td>
                                 <td>@i</td>
-                                <td><img src="@item.Image" style="width:100px;" /></td>
+                                <td><img class="imgProduct" data-id="@item.Id" src="@item.ProductImage.FirstOrDefault(x=>x.IsDefault).Image" width="50" /></td>
                                 <td class="text-left">@item.Title</td>
                                 <td class="text-left">@item.ProductCategory.Title</td>
                                 <td class="text-left">@item.Quantity</td>
@@ -100,7 +100,7 @@
                                 <td>@item.CreatedDate.ToString("dd/MM/yyyy")</td>
                                 <td><a href='#' data-id="@item.Id" class="btnActive">@Html.Raw(strCheck)</a></td>
                                 <td>
-                                    <a href="/admin/news/edit/@item.Id" class="btn btn-sm btn-primary">Sửa</a>
+                                    <a href="/admin/products/edit/@item.Id" class="btn btn-sm btn-primary">Sửa</a>
                                     <a href="#" data-id="@item.Id" class="btn btn-sm btn-danger btnDelete">Xóa</a>
                                 </td>
                                 <td></td>
@@ -132,10 +132,35 @@
 
 </section>
 <!-- /.content -->
+<div id="dialog">
+    <iframe id="myIframe" style="border:0; width: 100%; height: 100%;"></iframe>
+</div>
 
 @section scripts {
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script>
         $(document).ready(function () {
+            //hiển thị form upload ảnh
+            $('#dialog').dialog({
+                autoOpen: false,
+                show: "fade",
+                hide: "fade",
+                modal: true,
+                height: '600',
+                width: '700',
+                resizable: true,
+                title: 'Quản lý ảnh sản phẩm',
+                close: function () {
+                    window.location.reload();
+                }
+            });
+            $('body').on("click", '.imgProduct', function () {
+                var proid = $(this).attr("data-id");
+                $("#dialog #myIframe").attr("src", "/admin/ProductImages/Index?id=" + proid);
+                $('#dialog').dialog('open');
+                return false;
+            });
+
             $('body').on('click', '#BtnDeleteAll', function () {
                 var str = "";
                 var i = 0;
