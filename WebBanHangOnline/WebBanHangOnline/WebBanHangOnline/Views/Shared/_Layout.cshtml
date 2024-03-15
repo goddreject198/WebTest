@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/assets/plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="~/Content/assets/styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="~/Content/assets/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
     @*@Styles.Render("~/Content/css")*@
     @Scripts.Render("~/bundles/modernizr")
 
@@ -89,7 +90,7 @@
                                 <a href="/">colo<span>shop</span></a>
                             </div>
                             <nav class="navbar">
-                               @Html.Action("MenuTop","Menu")
+                                @Html.Action("MenuTop", "Menu")
                                 <ul class="navbar_user">
                                     <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                                     <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
@@ -201,12 +202,13 @@
     </div>
 
     @*@Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")*@
+        @Scripts.Render("~/bundles/bootstrap")*@
     <script src="~/Content/assets/js/jquery-3.2.1.min.js"></script>
     <script src="~/Content/assets/styles/bootstrap4/popper.js"></script>
     <script src="~/Content/assets/styles/bootstrap4/bootstrap.min.js"></script>
     <script src="~/Content/assets/plugins/Isotope/isotope.pkgd.min.js"></script>
     <script src="~/Content/assets/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+    <script src="~/Content/assets/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script src="~/Content/assets/plugins/easing/easing.js"></script>
     <script src="~/Content/assets/js/custom.js"></script>
     @RenderSection("scripts", required: false)
