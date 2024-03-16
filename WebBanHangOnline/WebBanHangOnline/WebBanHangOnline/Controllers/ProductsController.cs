@@ -20,6 +20,13 @@ namespace WebBanHangOnline.Controllers
             }    
             return View(items);
         }
+
+        public ActionResult Detail (string alias, int id)
+        {
+            var item = _db.Products.Find(id);
+            return View(item);
+        }
+
         public ActionResult ProductCategory(string alias, int id)
         {
             var items = _db.Products.ToList();
