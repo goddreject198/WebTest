@@ -12,12 +12,37 @@ namespace WebBanHangOnline.Controllers
         // GET: ShoppingCart
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult CheckOut()
+        {
             ShoppingCart cart = (ShoppingCart)Session["Cart"];
             if (cart != null)
             {
-                return View(cart.items);
+                ViewBag.CheckCart = cart;
             }
             return View();
+        }
+
+        public ActionResult Partial_Item_CheckOut()
+        {
+            ShoppingCart cart = (ShoppingCart)Session["Cart"];
+            if (cart != null)
+            {
+                return PartialView(cart.items);
+            }
+            return PartialView();
+        }
+
+        public ActionResult Partial_Item_Cart()
+        {
+            ShoppingCart cart = (ShoppingCart)Session["Cart"];
+            if (cart != null)
+            {
+                return PartialView(cart.items);
+            }
+            return PartialView();
         }
 
         public ActionResult ShowCount()
@@ -66,6 +91,18 @@ namespace WebBanHangOnline.Controllers
         }
 
         [HttpPost]
+        public ActionResult Update(int id, int quantity)
+        {
+            ShoppingCart cart = (ShoppingCart)Session["Cart"];
+            if (cart != null)
+            {
+                cart.UpdateQuantity(id, quantity);
+                return Json(new { Success = true });
+            }
+            return Json(new { Success = false });
+        }
+
+        [HttpPost]
         public ActionResult Delete(int id)
         {
             var code = new { Success = false, msg = "", code = -1, count = 0 };
@@ -81,6 +118,18 @@ namespace WebBanHangOnline.Controllers
             }
 
             return Json(code);
+        }
+
+        [HttpPost]
+        public ActionResult DeleteAll()
+        {
+            ShoppingCart cart = (ShoppingCart)Session["Cart"];
+            if (cart != null)
+            {
+                cart.ClearCart();
+                return Json(new { Success = true });
+            }
+            return Json(new { Success = false });
         }
     }
 }
