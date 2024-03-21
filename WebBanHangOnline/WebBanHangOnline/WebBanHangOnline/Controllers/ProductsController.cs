@@ -24,6 +24,13 @@ namespace WebBanHangOnline.Controllers
         public ActionResult Detail (string alias, int id)
         {
             var item = _db.Products.Find(id);
+            if (item != null)
+            {
+                _db.Products.Attach(item);
+                item.ViewCount = item.ViewCount + 1;
+                _db.Entry(item).Property(x=>x.ViewCount).IsModified = true;
+                _db.SaveChanges();
+            }
             return View(item);
         }
 

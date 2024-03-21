@@ -16,7 +16,7 @@ namespace WebBanHangOnline.Models.EF
         public int OrderId { get; set; }
         public int ProductId { get; set; }
         [Required]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         [Required]
         public int Quantity { get; set; }
         public virtual Order Order { get; set; }

@@ -50,6 +50,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Content\ckfinder\bin\Release\CKFinder.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
@@ -187,6 +190,7 @@
     <Compile Include="Areas\Admin\Controllers\ProductImagesController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsController.cs" />
     <Compile Include="Common\Common.cs" />
+    <Compile Include="Models\Common\ThongKeTruyCap.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -253,6 +257,18 @@
     <Compile Include="Migrations\202403031435221_updateDb10.Designer.cs">
       <DependentUpon>202403031435221_updateDb10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202403191543381_updateDb11.cs" />
+    <Compile Include="Migrations\202403191543381_updateDb11.Designer.cs">
+      <DependentUpon>202403191543381_updateDb11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403201518008_updateDb12.cs" />
+    <Compile Include="Migrations\202403201518008_updateDb12.Designer.cs">
+      <DependentUpon>202403201518008_updateDb12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403201551157_updateDb13.cs" />
+    <Compile Include="Migrations\202403201551157_updateDb13.Designer.cs">
+      <DependentUpon>202403201551157_updateDb13.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CommonAbstract.cs" />
@@ -270,9 +286,12 @@
     <Compile Include="Models\EF\ProductImage.cs" />
     <Compile Include="Models\EF\Subscribe.cs" />
     <Compile Include="Models\EF\SystemSetting.cs" />
+    <Compile Include="Models\EF\ThongKe.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OrderViewModel.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ThongKeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -3140,6 +3159,8 @@
     <Content Include="Content\clients\plugins\uplot\uPlot.iife.min.js" />
     <Content Include="Content\clients\plugins\uplot\uPlot.min.css" />
     <Content Include="Content\PagedList.css" />
+    <Content Include="Content\templates\send1.html" />
+    <Content Include="Content\templates\send2.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -3361,6 +3382,9 @@
     <Content Include="Views\ShoppingCart\Partial_Item_Cart.cshtml" />
     <Content Include="Views\ShoppingCart\CheckOut.cshtml" />
     <Content Include="Views\ShoppingCart\Partial_Item_CheckOut.cshtml" />
+    <Content Include="Views\ShoppingCart\Partial_CheckOut.cshtml" />
+    <Content Include="Views\ShoppingCart\CheckOutSuccess.cshtml" />
+    <Content Include="Views\Home\Refresh.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -3439,6 +3463,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403031435221_updateDb10.resx">
       <DependentUpon>202403031435221_updateDb10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403191543381_updateDb11.resx">
+      <DependentUpon>202403191543381_updateDb11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403201518008_updateDb12.resx">
+      <DependentUpon>202403201518008_updateDb12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403201551157_updateDb13.resx">
+      <DependentUpon>202403201551157_updateDb13.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
