@@ -130,6 +130,7 @@ namespace WebBanHangOnline.Controllers
                     WebBanHangOnline.Common.Common.SendMail("ShopOnline","Đơn hàng #" + order.Code, contentCus.ToString(),req.Email);
 
                     string contentAdmin = System.IO.File.ReadAllText(Server.MapPath("~/Content/templates/send1.html"));
+                    contentAdmin = contentAdmin.Replace("{{Order_Link}}", "https://localhost:44366/admin/order/view/" + order.Id.ToString());
                     contentAdmin = contentAdmin.Replace("{{MaDon}}", order.Code);
                     contentAdmin = contentAdmin.Replace("{{SanPham}}", strSanPham);
                     contentAdmin = contentAdmin.Replace("{{TenKhachHang}}", order.CustomerName);

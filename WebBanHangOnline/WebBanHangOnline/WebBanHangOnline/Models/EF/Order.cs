@@ -28,6 +28,6 @@ namespace WebBanHangOnline.Models.EF
         public int Quantity { get; set; }
         public int TypePayment { get; set; }
         public string Email { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
     }
 }
