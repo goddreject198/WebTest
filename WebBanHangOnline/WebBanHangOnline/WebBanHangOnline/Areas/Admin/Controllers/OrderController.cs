@@ -8,6 +8,7 @@ using PagedList;
 
 namespace WebBanHangOnline.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin,Employee")]
     public class OrderController : Controller
     {
         private ApplicationDbContext _db = new ApplicationDbContext();
